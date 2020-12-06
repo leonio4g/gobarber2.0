@@ -1,8 +1,8 @@
-import Appointment from '../models/Appointmet';
+import Appointment from '@modules/appointments/infra/typeorm/entities/Appointmet';
 import { getCustomRepository } from 'typeorm';
 import AppointmentsRepository from '../repositories/AppointmetsRepository';
 import { startOfHour } from 'date-fns';
-import AppError from '../errors/AppError';
+import AppError from '@shared/errors/AppError';
 
 interface Request {
   provider_id : string;
